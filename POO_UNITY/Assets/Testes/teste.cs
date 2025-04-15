@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class teste : MonoBehaviour
@@ -28,7 +29,22 @@ public class teste : MonoBehaviour
         {
             Debug.Log("O Carro " + fusca.getNome() + " é mais barato do que " + gol.getNome());
         }
-        
+
+        Caminhao.setTipoDeCarroceria("Larga");
+        Caminhao.setNumero_de_rodas(8);
+        Caminhao.setPreco(6000.00f);
+        Caminhao.setCor("Azul");
+        Caminhao.setNome("Caminhão da Sam");
+
+
+        if (fusca.ComparePreco(Caminhao)) ;
+        {
+            Debug.Log("O Carro " + fusca.getNome() + " é mais caro do que o " + Caminhao.getNome());
+        }
+        else
+        {
+            Debug.Log("O Carro " + fusca.getNome() + " é mais barato do que o " + Caminhao.getNome());
+        }
         
     }
 
