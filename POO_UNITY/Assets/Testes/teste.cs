@@ -62,14 +62,25 @@ public class teste : MonoBehaviour
         joao.AtribuirNumero_de_pes(2);
         joao.AtribuirNumero_de_maos(2);
 
-        
-        ork.
-        ork.
-        ork.
-        ork.
-        ork.
-        ork.
 
+        ork.AtribuirNome("Ork Gob");
+        ork.AtribuirEnergia(23);
+        ork.AtribuirForca_Ataque(15);
+        ork.AtribuirForca_do_pulo(8);
+        ork.AtribuirVelocidade(6);
+        ork.AtribuirNumero_de_pes(2);
+        ork.AtribuirNumero_de_maos(4);
+        ork.AtribuirArma(Inimigo.ArmaDoInimigo.MACHADO);
+        ork.AtribuirArmadura(Inimigo.ArmaduraDoInimigo.COURO);
+        
+        if (ork.DanoDoInimigo() >= joao.Energia())
+        {
+            Debug.Log("0" + joao.Nome() + "ficou sem energia");
+        }
+        else
+        {
+            Debug.Log("0" + joao.Nome() + "ainda tem" + joao.Energia() + "energia");
+        }
 
 
 

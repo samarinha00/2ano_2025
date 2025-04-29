@@ -6,14 +6,19 @@ public class Inimigo : Personagem
     {
         ESPADA, MACHADO, ADAGA
     }
+
+    public enum ArmaduraDoInimigo
+    {
+        MADEIRA, COURO, BRONZE, ACO
+    }
     
     
-    [SerializeField]
-    private string armadura;
-    [SerializeField]
+    [ SerializeField ]
+    private ArmaduraDoInimigo armadura;
+    [ SerializeField ]
     private ArmaDoInimigo arma;
 
-    public void AtribuirArmadura(string armadura)
+    public void AtribuirArmadura(ArmaduraDoInimigo armadura)
     {
         this.armadura = armadura;
     }
