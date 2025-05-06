@@ -18,9 +18,7 @@ public class Player : MonoBehaviour
         //esquerda X-
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Debug.Log(" " + posicao.x);
             posicao.x = posicao.x - velocidade * Time.deltaTime;
-
         }
 
         //direita X+
