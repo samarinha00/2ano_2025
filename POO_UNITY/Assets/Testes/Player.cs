@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public float velocidade = 10;
     void Start()
     {
+        velocidade = gameObject.GetComponent<Personagem>().Velocidade();
         _rigidbody = GetComponent<Rigidbody>();
     }
     
