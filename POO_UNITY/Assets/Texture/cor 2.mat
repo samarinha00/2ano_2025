@@ -103,7 +103,7 @@ Material:
     - _SPECULAR_ROUGHNESS: 0
     - _ZWrite: 0
     m_Colors:
-    - _BASE_COLOR: {r: 0.2666667, g: 0.8, b: 0.4451921, a: 0}
+    - _BASE_COLOR: {r: 0.2196078, g: 0.2196078, b: 0.2196078, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EMISSION_COLOR: {r: 0, g: 0, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
